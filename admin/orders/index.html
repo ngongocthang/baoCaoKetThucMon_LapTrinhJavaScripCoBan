@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <h2>Electronic<span class="danger">shop</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="../home.html">
+                    <span class="material-icons-sharp">dashboard</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="../users/index.html">
+                    <span class="material-icons-sharp">person_outline</span>
+                    <h3>Users</h3>
+                </a>
+                <a href="../Products/index.html">
+                    <span class="material-icons-sharp">receipt_long</span>
+                    <h3>Products</h3>
+                </a>
+                <a href="../category/index.html">
+                    <span class="material-icons-sharp">content_copy</span>
+                    <h3>Category</h3>
+                </a>
+                <a href="../orders/index.html">
+                    <span class="material-icons-sharp">inventory</span>
+                    <h3>Orders</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">report_gmailerrorred</span>
+                    <h3>Reports</h3>
+                </a>
+                
+               
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+        <!-- Main Content -->
+        <main>
+            <h1>Dashboard</h1>
+            <div class="showlogin" id="loginDiv"></div>
+
+            <!-- End of New Users Section -->
+            <!-- Recent Orders Table -->
+            <div class="recent-orders">
+                <h2>Recent Orders</h2>
+                <a href="../orders/">
+                    <span class="material-icons-sharp">add_circle_outline</span>
+                    <h3>Add New Product</h3>
+                </a>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Role</th>
+                            <th scope="col">#</th>
+                            <th scope="col">#</th>
+                        </tr>
+                    </thead>
+                    <tbody id="user-list">
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+            <!-- End of Recent Orders -->
+        </main>
+        <!-- End of Main Content -->
+    </div>
+    <!-- End of Nav -->
+    <script src="../public/js/admin_category.js"></script>
+    <script src="../public/js/admin_delete.js"></script>
+    <script src="../public/js/index.js"></script>
+    <script src="../public/js/logout.js"></script>
+</body>
+</html>

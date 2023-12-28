@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+  <link rel="stylesheet" href="public/css/style.css">
+  <link rel="stylesheet" href="public/css/login.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <title>Register</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Sidebar Section -->
+    <aside>
+      <div class="toggle">
+        <div class="logo">
+          <h2>Electronic<span class="danger">Shop</span></h2>
+        </div>
+        <div class="close" id="close-btn">
+          <span class="material-icons-sharp">close</span>
+        </div>
+      </div>
+
+
+    </aside>
+    <!-- End of Sidebar Section -->
+    <!-- Main Content -->
+    <main>
+      <h1>Dashboard</h1>
+      <!-- End of New Users Section -->
+      <!-- Recent Orders Table -->
+      <div class="recent-orders">
+
+        <table class="table" style="width: 30%; margin-left: 420px ;">
+          <thead>
+            <tr>
+              <th scope="col" id="col">
+                <p>REGISTER</p>
+                <div class="form-group" style="width: 300px;">
+                  <label for="name" style="margin-left: 10px;">Name:</label>
+                  <input type="name" id="name" name="name" required>
+                </div>
+                <div class="form-group" style="width: 300px;">
+                  <label for="email" style="margin-left: 10px;">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group" style="width: 300px;">
+                  <label for="password" style="margin-left: 10px;">Password:</label>
+                  <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group" id="form-group" style="width: 300px;">
+                  <label for="role" id="role" style="margin-left: 10px;">Role:</label>
+                  <select class="form-select me-4">
+                    <option>Admin</option>
+                    <option>User</option>
+                  </select>
+                </div>
+                <a href="./login.html" class="link-primary" id="sty_a">Sign in here!</a>
+                <div class="form-group" >
+                    <button onclick="registerUser()" type="submit">Register</button>
+                </div>
+
+              </th>
+            </tr>
+          </thead>
+          <tbody id="Product-list">
+          </tbody>
+        </table>
+        <a href="#">Show All</a>
+
+      </div>
+      <!-- End of Recent Orders -->
+    </main>
+    <!-- End of Main Content -->
+  </div>
+  <!-- End of Nav -->
+  <script src="./public/js/admin_user.js"></script>
+  <script src="./public/js/register.js"></script>
+</body>
+
+</html>

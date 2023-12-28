@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <title>Dashboard - Products</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <h2>Electronic<span class="danger">shop</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-icons-sharp">dashboard</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="../users/index.html">
+                    <span class="material-icons-sharp">person_outline</span>
+                    <h3>Users</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">receipt_long</span>
+                    <h3>Products</h3>
+                </a>
+                <a href="../category/index.html">
+                    <span class="material-icons-sharp">content_copy</span>
+                    <h3>Category</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">inventory</span>
+                    <h3>Orders</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">report_gmailerrorred</span>
+                    <h3>Reports</h3>
+                </a>
+             
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+        <!-- Main Content -->
+        <main>
+            <h1>Dashboard</h1>
+            <!-- New Product Entry Section -->
+            <p class="fw-bold text-center fs-1">Trang chỉnh sửa danh mục sản phẩm.</p>
+            <!-- <form action="" method="POST" enctype="multipart/form-data"> -->
+            <div class="mb-3">
+                    <input type="hidden" class="form-control" id="id" name="id"
+                        placeholder="Nhập id danh mục sản phẩm">
+            </div>
+            <div class="mb-3">
+                    <label for="name" class="form-label">Tên</label>
+                    <input type="text" class="form-control" id="name" name="name"
+                        placeholder="Nhập tên danh mục sản phẩm">
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Mô tả</label>
+                <textarea class="form-control" id="description" name="description"
+                    placeholder="Nhập mô tả danh mục sản phẩm"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="price" class="form-label">Giá</label>
+                <textarea class="form-control" id="price" name="price"
+                    placeholder="Nhập mô tả giá sản phẩm"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="quantity" class="form-label">Quantity</label>
+                <textarea class="form-control" id="quantity" name="quantity"
+                    placeholder="Nhập số lượng sản phẩm"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="image" class="form-label">Ảnh</label>
+                <input type="text" class="form-control" id="image" name="image" placeholder="Nhập ảnh danh mục sản phẩm">
+            </div>
+            <button class="btn btn-primary" name="submit" type="submit" onclick="editProduct()"><i
+                    data-lucide="chevron-right-square"></i>Edit</button>
+            <!-- </form> -->
+        </main>
+        <!-- End of Main Content -->
+    </div>
+    <!-- End of Nav -->
+    <script src="../public/js/admin_product.js"></script>
+    <script src="../public/js/index.js"></script>
+</body>
+
+</html>
